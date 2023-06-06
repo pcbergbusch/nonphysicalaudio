@@ -1,0 +1,19 @@
+{
+  "name": "client",
+  "version": "0.0.1",
+  "description": "Website for Nonphysical Audio",
+  "main": "bundle.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "clean_windows": "rd /s /q node_modules && rd /s /q build && del package-lock.json",
+    "clean_linux": "rm -rf node_modules && rm -rf build && rm -f package-lock.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul Bergbusch",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-scripts": "^5.0.1"
+  }
+}
