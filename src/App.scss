@@ -1,0 +1,282 @@
+@import "./common/colors.scss";
+
+.tritonBlue {
+  color: $tritonBlue;
+}
+
+.gray {
+  color: $gray;
+}
+
+.lightGray {
+  color: $lightGray;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+.flexRowCenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flexRowEnd {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.disabled {
+  cursor: not-allowed !important;
+}
+
+input:disabled {
+  cursor: not-allowed !important;
+  color: white;
+  background: $gray;
+}
+
+.formLabel {
+  margin-top: 2.0rem;
+  margin-bottom: 0.3rem;
+  color: $darkGray;
+  font-weight: bold;
+}
+
+.formInput {
+  margin-bottom: 0.5rem;
+  width: 90%;
+  height: 1.5rem;
+  font-family: Arial;
+  border: solid 1px black;
+}
+
+.formSelect {
+  margin-bottom: 0.5rem;
+  width: 92%;
+  height: 2.0rem;
+  font-family: Arial;
+  border: solid 1px black;
+}
+
+.formTextArea {
+  margin-bottom: 0.5rem;
+  width: 90%;
+  height: 4.5rem;
+  font-family: Arial;
+  border: solid 1px black;
+}
+
+.formError {
+  font-size: small;
+  color: red;
+}
+
+.memberContainer {
+  margin-top: 0.3rem;
+  width: max-content;
+  height: 2.0rem;
+  border-radius: 1.0rem;
+  border: 0;
+  color: $lightGray;
+  background: $darkGray;
+}
+
+.memberImage {
+  width: 2.0rem;
+  height: 2.0rem;
+  border-radius: 1.0rem;
+}
+
+.memberName {
+  margin-left: 1.0rem;
+  margin-right: 1.0rem;
+  margin-top: 0.45rem;
+  font-weight: bold;
+  color: white;
+}
+
+.memberIcon {
+  margin-right: 0.5rem;
+  margin-top: 0.45rem;
+  border-radius: 1.0rem;
+  color: white;
+}
+
+.header {
+  position: relative;
+  margin-top: 1.0rem;
+  width: max-content;
+  font-size: large;
+  font-weight: bold;
+  color: $darkGray;
+}
+
+.emptyResults {
+  margin: auto;
+  width: 40%;
+  font-size: x-large;
+  font-weight: bold;
+  color: $gray;
+}
+
+.button {
+  cursor: pointer;
+  margin-left: 1.0rem;
+  margin-right: 1.5rem;
+  margin-bottom: 0.5rem;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+  min-width: 5.0rem;
+  height: 2.0rem;
+  text-align: center;
+  border-radius: 1.0rem;
+  border: 0;
+  color: white;
+  background: $tritonBlue;
+  :disabled {
+    visibility: hidden;
+  }
+}
+
+.xButton {
+  cursor: pointer;
+  margin-left: 1.0rem;
+  margin-top: 1.0rem;
+  font-weight: bold;
+  color: $gray;
+  transition: 0.3s;
+  &:hover {
+    font-weight: bolder;
+    color: $tritonBlue;
+  }
+}
+
+.clearAllButton {
+  cursor: default;
+  align-items: center;
+  justify-content: center;
+  margin: 0.3rem;
+  font-size: small;
+  color: $darkGray;
+  transition: 0.3s;
+  &:hover {
+    font-weight: normal;
+    color: $tritonBlue;
+  }
+}
+
+.tooltip {   
+  padding: 0.3rem 0.5rem;
+  border-radius: 0.5rem;
+  font-size: 9pt;
+  color: white;
+  background-color: $darkGray;
+}
+
+.contextMenu {
+  position: fixed;
+  z-index: 50;
+  margin-left: 0.0rem;
+  width: max-content;
+  min-width: 8.0rem;
+  text-align: left;
+  border-left: 1px solid lightGray;
+  border-right: 1px solid lightGray;
+  border-top: 1px solid lightGray;
+
+  &--option {
+    cursor: default;
+    padding: 0.4rem;
+    font-size: small;
+    border-bottom: 1px solid lightGray;
+    color: $lightGray;
+    background: $darkGray;
+    transition: 0.3s;
+    &:hover {
+      color: white;
+      background: $gray;
+    }
+  }
+}
+
+.companyLogo {
+  width: 35px;
+}
+.companyLogo > img {
+  overflow: hidden;
+}
+
+.tridentLogoMenuBar {
+  margin-top: 0.5rem;
+  font-family: 'Times New Roman';
+  font-size: xx-large;
+  color: white;
+}
+
+.tridentLogoSignIn {
+  font-family: 'Times New Roman';
+  font-size: 6.0rem;
+  color: $tritonBlue;
+}
+
+// override styles in package react-confirm
+.react-confirm-alert-body {
+  width: max-content;
+}
+
+// styles for browser auto-complete
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 0;
+  -webkit-text-fill-color: #000;
+  -webkit-box-shadow: 0 0 0px 1000px #fff inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+// styles for browser scrollbars
+::-webkit-scrollbar-thumb {
+  background: rgb(173, 173, 173);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(187, 187, 187);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  height: auto;
+  width: auto;
+}
+
+.preventSelect {
+  -webkit-user-select: none; /* Safari */
+  -ms-user-select: none; /* IE 10 and IE 11 */
+  user-select: none; /* Standard syntax */
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: $placeholderGray;
+  // padding-left: 0.5rem;
+  // opacity: 1; /* Firefox */
+}
