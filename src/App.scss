@@ -1,5 +1,18 @@
 @import "./common/colors.scss";
 
+html, body {
+  margin: 0;
+  height: 100%;
+  position: fixed;
+  z-index: 0;
+  overflow: auto;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+}
+
 .tritonBlue {
   color: $tritonBlue;
 }
@@ -20,7 +33,7 @@
 .flexRowCenter {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .flexRowEnd {
@@ -32,6 +45,12 @@
 .flexColumn {
   display: flex;
   flex-direction: column;
+}
+
+.flexColumnEnd {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .pointer {
@@ -94,10 +113,8 @@ input:disabled {
   background: $darkGray;
 }
 
-.memberImage {
-  width: 2.0rem;
-  height: 2.0rem;
-  border-radius: 1.0rem;
+.logoImage {
+  height: 30%;
 }
 
 .memberName {
@@ -145,7 +162,7 @@ input:disabled {
   border-radius: 1.0rem;
   border: 0;
   color: white;
-  background: $tritonBlue;
+  background: salmon;
   :disabled {
     visibility: hidden;
   }
@@ -219,17 +236,28 @@ input:disabled {
   overflow: hidden;
 }
 
-.tridentLogoMenuBar {
-  margin-top: 0.5rem;
-  font-family: 'Times New Roman';
-  font-size: xx-large;
+.landingPageMenuBarText {
+  margin: 1.2rem;
+  // width: "30%";
+  font-family: 'Monaco';
+  font-size: medium;
   color: white;
 }
 
-.tridentLogoSignIn {
-  font-family: 'Times New Roman';
+.landingPageTitle {
+  display: block;
+  margin: auto;
+  font-family: 'Monaco';
   font-size: 6.0rem;
-  color: $tritonBlue;
+  color: white;
+}
+
+.landingPageText {
+  display: block;
+  margin: auto;
+  font-family: 'Monaco';
+  font-size: 1.5rem;
+  color: white;
 }
 
 // override styles in package react-confirm

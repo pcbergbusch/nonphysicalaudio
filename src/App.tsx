@@ -7,33 +7,52 @@ import React from "react"
 /*
  * imports of implemented components and functions
  */
-// import ControlArea from "./components/ControlArea"
+import NavigationBar from "./components/NavigationBar"
+import BottomBar from "./components/BottomBar"
 // import ContentArea from "./components/ContentArea"
 
 /*
  * imports of styles
  * order is important! custom styles must be imported last
  */
-import LoginImage from "./assets/images/npa_dark.PNG"
 import "./App.scss"
 
 const App = () => {
   
   return (
-    <div className="flexRow"
+    <div className="flexColumn" style={{backgroundColor: "black"}}
       // prevent the default browser right-click behaviour
       onContextMenu={(e) => {e.preventDefault()}}
     >
-      <img alt="Triton" src={LoginImage} style={{height: "98vh"}} />
-      <div style={{display: "block", margin: "auto"}}>
-        <div className="flexRowCenter tridentLogoSignIn">Trident</div>
-        <button
-          className="button"
-          style={{display: "block", margin: "auto", fontSize: 16}}
-        >
-          Sign in
-        </button>
+      <NavigationBar />
+      <div
+        className="landingPageTitle"
+      >
+        Nonphysical Audio
       </div>
+      <p></p>
+      <div
+        className="landingPageText"
+        // style={{display: "block", margin: "auto"}}
+      >
+        We are a team of scientists and engineers fascinated by the physics of sound
+        and the psychology of music.
+      </div>
+      <p></p>
+      <div
+        className="landingPageText"
+        // style={{display: "block", margin: "auto"}}
+      >
+        Our right and left brains are fully connected.
+      </div>
+      <p></p>
+      <div
+        className="landingPageText"
+        // style={{display: "block", margin: "auto"}}
+      >
+        As hardware and software gurus, we write code to generate and transform audio.
+      </div>
+      <BottomBar />
     </div>
   )
 }
