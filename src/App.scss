@@ -13,12 +13,56 @@ html, body {
   background: black;
 }
 
-.gray {
-  color: $gray;
+.navigationBarContainer {
+  margin: 2.0rem;
 }
 
-.lightGray {
-  color: $lightGray;
+.logoImage {
+  height: 30%;
+}
+
+.navigationBarText {
+  margin-top: 1.2rem;
+  font-family: 'Monaco';
+  font-size: large;
+  color: white;
+}
+
+.pageContainer {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2.0rem;
+  justify-content: center;
+}
+
+.pageTitle {
+  padding-bottom: 5.0rem;
+  font-family: 'Monaco';
+  font-size: 6.0rem;
+  color: white;
+}
+
+.pageText {
+  font-family: 'Monaco';
+  font-size: large;
+  color: white;
+}
+
+.bottomBarContainer {
+  position: fixed;
+  left: 2.0rem;
+  bottom: 2.0rem;
+}
+
+.bottomBarText {
+  font-family: 'Monaco';
+  font-size: medium;
+  color: white;
+}
+
+.break {
+  flex-basis: 100%;
+  height: 1.0rem;
 }
 
 .flexRow {
@@ -63,27 +107,23 @@ input:disabled {
   background: $gray;
 }
 
-.logoImage {
-  height: 30%;
-}
-
 .button {
   cursor: pointer;
-  margin-left: 1.0rem;
-  margin-right: 1.5rem;
-  margin-bottom: 0.5rem;
-  padding-left: 0.8rem;
-  padding-right: 0.8rem;
-  min-width: 5.0rem;
+  // margin-left: 1.0rem;
+  // margin-right: 1.5rem;
+  // margin-bottom: 0.5rem;
+  padding-left: 1.0rem;
+  padding-right: 1.0rem;
+  // min-width: 5.0rem;
   height: 2.0rem;
-  text-align: center;
-  border-radius: 1.0rem;
-  border: 0;
-  color: white;
-  background: salmon;
-  :disabled {
-    visibility: hidden;
-  }
+  // text-align: center;
+  // border-radius: 1.0rem;
+  // border: 0;
+  color: salmon;
+  background: black;
+  // :disabled {
+  //   visibility: hidden;
+  // }
 }
 
 .contextMenu {
@@ -110,22 +150,6 @@ input:disabled {
       background: $gray;
     }
   }
-}
-
-.landingPageTitle {
-  display: block;
-  margin: auto;
-  font-family: 'Monaco';
-  font-size: 6.0rem;
-  color: white;
-}
-
-.landingPageText {
-  display: block;
-  margin: auto;
-  font-family: 'Monaco';
-  font-size: 1.5rem;
-  color: white;
 }
 
 // styles for browser auto-complete
