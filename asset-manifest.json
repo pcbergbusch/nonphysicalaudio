@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/nonphysicalaudio/static/css/main.98695559.css",
-    "main.js": "/nonphysicalaudio/static/js/main.c5580cdc.js",
-    "static/media/npa_dark.PNG": "/nonphysicalaudio/static/media/npa_dark.7c353fa281f8b61b2659.PNG",
-    "index.html": "/nonphysicalaudio/index.html",
-    "main.98695559.css.map": "/nonphysicalaudio/static/css/main.98695559.css.map",
-    "main.c5580cdc.js.map": "/nonphysicalaudio/static/js/main.c5580cdc.js.map"
+    "main.css": "/static/css/main.98695559.css",
+    "main.js": "/static/js/main.2f66db6f.js",
+    "static/media/npa_dark.PNG": "/static/media/npa_dark.7c353fa281f8b61b2659.PNG",
+    "index.html": "/index.html",
+    "main.98695559.css.map": "/static/css/main.98695559.css.map",
+    "main.2f66db6f.js.map": "/static/js/main.2f66db6f.js.map"
   },
   "entrypoints": [
     "static/css/main.98695559.css",
-    "static/js/main.c5580cdc.js"
+    "static/js/main.2f66db6f.js"
   ]
 }
