@@ -2,14 +2,12 @@
  * imports of react packages
  */
 import React from "react"
-// import { FaUserLock } from "react-icons/fa"
 
 /*
  * imports of implemented components and functions
  */
 import NavigationBar from "./components/NavigationBar"
 import BottomBar from "./components/BottomBar"
-// import ContentArea from "./components/ContentArea"
 
 /*
  * imports of styles
@@ -33,7 +31,6 @@ const App = () => {
       <p></p>
       <div
         className="landingPageText"
-        // style={{display: "block", margin: "auto"}}
       >
         We are a team of scientists and engineers fascinated by the physics of sound
         and the psychology of music.
@@ -41,16 +38,14 @@ const App = () => {
       <p></p>
       <div
         className="landingPageText"
-        // style={{display: "block", margin: "auto"}}
       >
         Our right and left brains are fully connected.
       </div>
       <p></p>
       <div
         className="landingPageText"
-        // style={{display: "block", margin: "auto"}}
       >
-        As hardware and software gurus, we write code to generate and transform audio.
+        We build non-linear models and non-physical solutions for audio synthesis and transformation.
       </div>
       <BottomBar />
     </div>

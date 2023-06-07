@@ -13,7 +13,6 @@ import App from "./App"
  * imports of styles
  * order is important! custom styles must be imported last
  */
-import "./index.scss"
 
 const container = document.getElementById("app")!
 const root = createRoot(container)

@@ -1,13 +1,11 @@
 /*
  * imports of react packages
  */
-import React, { useEffect, useState } from "react"
+import React from "react"
 
 /*
  * imports of implemented components and functions
  */
-// import useComponentVisible from "../../hooks/useComponentVisible"
-// import { getNameFirst } from "../../common/utilsUser"
 import LogoImage from "../assets/images/npa_dark.PNG"
 
 /*
@@ -29,8 +27,7 @@ const NavigationBar = () => {
       >
         <span className="flexRow">
           <img src={LogoImage} className="logoImage"></img>
-          <div style={{width: "2%"}}></div>
-          <div className="landingPageMenuBarText">Nonphysical Audio</div>
+          <div className="navigationBarText">Nonphysical Audio</div>
         </span>
         <div style={{width: "60%"}}></div>
         <button className="button">Plugins</button>

@@ -1,14 +1,11 @@
 /*
  * imports of react packages
  */
-import React, { useEffect, useState } from "react"
+import React from "react"
 
 /*
  * imports of implemented components and functions
  */
-// import useComponentVisible from "../../hooks/useComponentVisible"
-// import { getNameFirst } from "../../common/utilsUser"
-import LogoImage from "../assets/images/npa_dark.PNG"
 
 /*
  * imports of styles
@@ -27,7 +24,7 @@ const BottomBar = () => {
       <span
         className="flexRow"
       >
-        <div className="landingPageMenuBarText">Developed in Frankfurt | Contact | Impressum</div>
+        <div className="bottomBarText">Developed in Frankfurt | Contact | Impressum</div>
       </span>
     </div>
   )

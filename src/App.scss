@@ -13,10 +13,6 @@ html, body {
   background: black;
 }
 
-.tritonBlue {
-  color: $tritonBlue;
-}
-
 .gray {
   color: $gray;
 }
@@ -67,86 +63,8 @@ input:disabled {
   background: $gray;
 }
 
-.formLabel {
-  margin-top: 2.0rem;
-  margin-bottom: 0.3rem;
-  color: $darkGray;
-  font-weight: bold;
-}
-
-.formInput {
-  margin-bottom: 0.5rem;
-  width: 90%;
-  height: 1.5rem;
-  font-family: Arial;
-  border: solid 1px black;
-}
-
-.formSelect {
-  margin-bottom: 0.5rem;
-  width: 92%;
-  height: 2.0rem;
-  font-family: Arial;
-  border: solid 1px black;
-}
-
-.formTextArea {
-  margin-bottom: 0.5rem;
-  width: 90%;
-  height: 4.5rem;
-  font-family: Arial;
-  border: solid 1px black;
-}
-
-.formError {
-  font-size: small;
-  color: red;
-}
-
-.memberContainer {
-  margin-top: 0.3rem;
-  width: max-content;
-  height: 2.0rem;
-  border-radius: 1.0rem;
-  border: 0;
-  color: $lightGray;
-  background: $darkGray;
-}
-
 .logoImage {
   height: 30%;
-}
-
-.memberName {
-  margin-left: 1.0rem;
-  margin-right: 1.0rem;
-  margin-top: 0.45rem;
-  font-weight: bold;
-  color: white;
-}
-
-.memberIcon {
-  margin-right: 0.5rem;
-  margin-top: 0.45rem;
-  border-radius: 1.0rem;
-  color: white;
-}
-
-.header {
-  position: relative;
-  margin-top: 1.0rem;
-  width: max-content;
-  font-size: large;
-  font-weight: bold;
-  color: $darkGray;
-}
-
-.emptyResults {
-  margin: auto;
-  width: 40%;
-  font-size: x-large;
-  font-weight: bold;
-  color: $gray;
 }
 
 .button {
@@ -166,41 +84,6 @@ input:disabled {
   :disabled {
     visibility: hidden;
   }
-}
-
-.xButton {
-  cursor: pointer;
-  margin-left: 1.0rem;
-  margin-top: 1.0rem;
-  font-weight: bold;
-  color: $gray;
-  transition: 0.3s;
-  &:hover {
-    font-weight: bolder;
-    color: $tritonBlue;
-  }
-}
-
-.clearAllButton {
-  cursor: default;
-  align-items: center;
-  justify-content: center;
-  margin: 0.3rem;
-  font-size: small;
-  color: $darkGray;
-  transition: 0.3s;
-  &:hover {
-    font-weight: normal;
-    color: $tritonBlue;
-  }
-}
-
-.tooltip {   
-  padding: 0.3rem 0.5rem;
-  border-radius: 0.5rem;
-  font-size: 9pt;
-  color: white;
-  background-color: $darkGray;
 }
 
 .contextMenu {
@@ -229,21 +112,6 @@ input:disabled {
   }
 }
 
-.companyLogo {
-  width: 35px;
-}
-.companyLogo > img {
-  overflow: hidden;
-}
-
-.landingPageMenuBarText {
-  margin: 1.2rem;
-  // width: "30%";
-  font-family: 'Monaco';
-  font-size: medium;
-  color: white;
-}
-
 .landingPageTitle {
   display: block;
   margin: auto;
@@ -258,11 +126,6 @@ input:disabled {
   font-family: 'Monaco';
   font-size: 1.5rem;
   color: white;
-}
-
-// override styles in package react-confirm
-.react-confirm-alert-body {
-  width: max-content;
 }
 
 // styles for browser auto-complete
@@ -301,10 +164,4 @@ select:-webkit-autofill:focus {
   -webkit-user-select: none; /* Safari */
   -ms-user-select: none; /* IE 10 and IE 11 */
   user-select: none; /* Standard syntax */
-}
-
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-  color: $placeholderGray;
-  // padding-left: 0.5rem;
-  // opacity: 1; /* Firefox */
 }
