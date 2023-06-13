@@ -105,7 +105,7 @@ const App = () => {
           <div
             className="pageText"
           >
-            Our right and left brains are fully connected.
+            The left and right sides of our brains are fully connected.
           </div>
           <div className="break"></div>
           <div
@@ -126,7 +126,7 @@ const App = () => {
           <div
             className="pageText"
           >
-              Too many plugins have too many parameters with weird names that no one undertands.
+              Too many plugins have too many parameters with weird names that no one understands.
           </div>
           <div className="break"></div>
           <div
