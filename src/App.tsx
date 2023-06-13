@@ -174,7 +174,7 @@ const App = () => {
           <div
             className="pageText"
           >
-              These are remixes of my favourite pipe organ tunes.
+              Enjoy these electronic remixes of original pipe organ compositions.
           </div>
           <div className="break"></div>
           <div

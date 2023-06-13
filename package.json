@@ -4,6 +4,7 @@
   "repository": {
     "url": "git+https://github.com/pcbergbusch/nonphysicalaudio.git"
   },
+  "homepage": ".",
   "description": "Website for Nonphysical Audio",
   "scripts": {
     "start": "react-scripts start",
