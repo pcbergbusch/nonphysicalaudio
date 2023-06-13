@@ -220,11 +220,6 @@ const App = () => {
           className="flexRow"
         >
           <div
-            className="bottomBarText"
-          >
-            Developed in Frankfurt |
-          </div>
-          <div
             className="button bottomBarText"
             onClick = {() => {
               setMainVisible(false)

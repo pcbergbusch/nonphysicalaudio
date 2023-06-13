@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
 @import "./common/colors.scss";
 
 html, body {
@@ -10,6 +12,7 @@ html, body {
   top: 0;
   width: 100%;
   height: 100%;
+  font-family: 'Space Mono', monospace;
   background: black;
 }
 
@@ -22,8 +25,7 @@ html, body {
 }
 
 .navigationBarText {
-  margin-top: 1.2rem;
-  font-family: 'Monaco';
+  margin-top: 1.0rem;
   font-size: large;
   color: white;
 }
@@ -31,31 +33,25 @@ html, body {
 .pageContainer {
   display: flex;
   flex-wrap: wrap;
-  padding: 2.0rem;
   justify-content: center;
 }
 
 .pageTitle {
-  padding-bottom: 5.0rem;
-  font-family: 'Monaco';
   font-size: 6.0rem;
   color: white;
 }
 
 .pageText {
-  font-family: 'Monaco';
   font-size: large;
   color: white;
 }
 
 .bottomBarContainer {
-  position: fixed;
-  left: 2.0rem;
-  bottom: 2.0rem;
+  padding: 2.0rem;
+  padding-top: 20.0rem;
 }
 
 .bottomBarText {
-  font-family: 'Monaco';
   font-size: medium;
   color: white;
 }
@@ -109,21 +105,11 @@ input:disabled {
 
 .button {
   cursor: pointer;
-  // margin-left: 1.0rem;
-  // margin-right: 1.5rem;
-  // margin-bottom: 0.5rem;
   padding-left: 1.0rem;
   padding-right: 1.0rem;
-  // min-width: 5.0rem;
   height: 2.0rem;
-  // text-align: center;
-  // border-radius: 1.0rem;
-  // border: 0;
   color: salmon;
   background: black;
-  // :disabled {
-  //   visibility: hidden;
-  // }
 }
 
 .contextMenu {
