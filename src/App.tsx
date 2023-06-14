@@ -6,7 +6,7 @@ import React, {useState} from "react"
 /*
  * imports of implemented components and functions
  */
-import LogoImage from "./assets/images/npa_dark.PNG"
+import LogoImage from "./assets/images/npa_dark_space.PNG"
 
 /*
  * imports of styles
